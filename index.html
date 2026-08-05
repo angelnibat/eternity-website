@@ -18,11 +18,12 @@
     muted
     loop
     playsinline
+    preload="metadata"
     poster="assets/poster.png"
     aria-hidden="true"
   >
-    <source src="assets/background.webm" type="video/webm" />
     <source src="assets/background.mp4" type="video/mp4" />
+    <source src="assets/background.webm" type="video/webm" />
   </video>
 
   <div class="background-fallback" aria-hidden="true"></div>
@@ -56,7 +57,7 @@
     <section class="hero" id="home">
       <div class="hero-content">
         <div class="infinity-mark" aria-hidden="true">∞</div>
-        <h1>ETERNITY</h1>
+        <h1 class="hero-title">ETERNITY</h1>
         <p class="release-line">OUT OF MY MIND OUT NOW</p>
 
         <a class="primary-button" href="https://share.amuse.io/track/eternity-out-of-my-mind" data-edit-link target="_blank" rel="noopener noreferrer">
