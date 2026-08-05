@@ -412,134 +412,83 @@ footer a {
   font-size: 18px;
 }
 
+
+.platform-logo {
+  color: rgba(255,255,255,.92);
+  filter:
+    drop-shadow(0 0 10px rgba(255,255,255,.22))
+    drop-shadow(0 0 24px rgba(145,118,255,.35));
+}
+
+.platform-logo svg {
+  width: 74px;
+  height: 74px;
+}
+
+.socials svg {
+  width: 16px;
+  height: 16px;
+}
+
 .about-panel {
-  margin: 18px 52px;
-  padding: 28px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-  border-top: 1px solid rgba(255, 255, 255, 0.13);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
-}
-
-.about-panel .eyebrow {
-  flex: 0 0 auto;
-  color: rgba(255, 255, 255, 0.56);
-  font-size: 11px;
-  letter-spacing: 0.24em;
-}
-
-.about-panel p {
-  max-width: 720px;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.76);
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(22px, 3vw, 36px);
-  line-height: 1.15;
-  text-align: right;
-}
-
-.player {
-  margin: 18px 52px 8px;
-  padding: 14px 18px;
-  display: grid;
-  grid-template-columns: 68px minmax(140px, 1fr) auto auto auto minmax(260px, 1.4fr);
-  align-items: center;
-  gap: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 22px;
-  background: rgba(5, 5, 10, 0.7);
+  margin: 40px 52px;
+  padding: 42px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 30px;
+  background: linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));
   backdrop-filter: blur(22px);
 }
 
-.player img {
-  width: 68px;
-  height: 68px;
-  border-radius: 13px;
-  object-fit: cover;
-  filter: grayscale(1) contrast(1.08);
+.about-header {
+  margin-bottom: 28px;
 }
 
-.track-info {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.track-info strong {
+.about-header .eyebrow {
+  color: rgba(255,255,255,.55);
+  letter-spacing: .3em;
   font-size: 12px;
-  letter-spacing: 0.18em;
 }
 
-.track-info span {
-  color: var(--muted);
-  font-size: 10px;
-  letter-spacing: 0.2em;
+.about-header h2 {
+  margin: 10px 0 0;
+  font-family: "Cormorant Garamond",serif;
+  font-size: clamp(36px,5vw,64px);
+  font-weight: 500;
 }
 
-.icon-button,
-.play-button {
-  display: grid;
-  place-items: center;
-  border: 0;
-  color: white;
-  background: transparent;
-  cursor: pointer;
+.about-content {
+  max-width: 900px;
 }
 
-.icon-button {
+.about-content p {
+  color: rgba(255,255,255,.82);
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.about-content blockquote {
+  margin: 36px 0;
+  padding-left: 22px;
+  border-left: 2px solid rgba(255,255,255,.35);
+  font-family: "Cormorant Garamond",serif;
   font-size: 30px;
-  opacity: 0.68;
+  color: #fff;
 }
 
-.play-button {
-  width: 52px;
-  height: 52px;
-  border: 1px solid rgba(255, 255, 255, 0.48);
-  border-radius: 50%;
-  font-size: 16px;
-  transition: 180ms ease;
-}
-
-.play-button:hover {
-  box-shadow: 0 0 24px rgba(147, 121, 255, 0.3);
-}
-
-.progress-wrap {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 14px;
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 10px;
-}
-
-.progress {
-  height: 2px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.18);
-}
-
-.progress span {
-  display: block;
-  width: 38%;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.56), white);
-  box-shadow: 0 0 8px rgba(180, 160, 255, 0.9);
+.about-content .closing {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
 }
 
 footer {
-  margin: 25px 52px 2px;
+  margin: 28px 52px 4px;
   display: flex;
-  justify-content: space-between;
-  color: rgba(255, 255, 255, 0.42);
+  justify-content: center;
+  color: rgba(255,255,255,.42);
   font-size: 10px;
-  letter-spacing: 0.2em;
-}
-
-footer a {
-  color: rgba(255, 255, 255, 0.62);
+  letter-spacing: .2em;
 }
 
 @media (max-width: 1100px) {
@@ -548,25 +497,17 @@ footer a {
   }
 
   .link-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2,minmax(0,1fr));
   }
 
   .link-card:last-child {
-    grid-column: 1 / -1;
-  }
-
-  .player {
-    grid-template-columns: 60px 1fr auto auto auto;
-  }
-
-  .progress-wrap {
     grid-column: 1 / -1;
   }
 }
 
 @media (max-width: 760px) {
   .site-shell {
-    width: min(100% - 18px, 1480px);
+    width: min(100% - 18px,1480px);
     margin: 9px auto;
     padding: 14px;
     border-radius: 22px;
@@ -585,13 +526,17 @@ footer a {
   }
 
   .socials {
-    gap: 6px;
+    gap: 5px;
   }
 
   .socials a {
     width: 30px;
     height: 30px;
-    font-size: 9px;
+  }
+
+  .socials svg {
+    width: 14px;
+    height: 14px;
   }
 
   .hero {
@@ -600,16 +545,16 @@ footer a {
   }
 
   .hero h1 {
-    font-size: clamp(65px, 22vw, 112px);
-    letter-spacing: 0.01em;
+    font-size: clamp(65px,22vw,112px);
+    letter-spacing: .01em;
   }
 
   .release-line {
     margin-top: 24px;
     font-size: 11px;
     line-height: 1.7;
-    letter-spacing: 0.25em;
-    text-indent: 0.25em;
+    letter-spacing: .25em;
+    text-indent: .25em;
   }
 
   .primary-button {
@@ -641,35 +586,23 @@ footer a {
     height: 90px;
   }
 
-  .about-panel {
-    margin: 20px 0;
-    padding: 24px 8px;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .about-panel p {
-    text-align: left;
-  }
-
-  .player {
-    margin: 0;
-    grid-template-columns: 58px 1fr auto;
-    gap: 12px;
-  }
-
-  .player img {
+  .platform-logo svg {
     width: 58px;
     height: 58px;
   }
 
-  .icon-button {
-    display: none;
+  .about-panel {
+    margin: 22px 0;
+    padding: 28px 22px;
   }
 
-  .play-button {
-    width: 44px;
-    height: 44px;
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .about-content blockquote {
+    margin: 28px 0;
+    font-size: 24px;
   }
 
   footer {

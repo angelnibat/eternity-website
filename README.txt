@@ -12,7 +12,7 @@ Recommended video:
 - 10–25 seconds
 - Under roughly 15 MB if possible
 
-4. Open index.html and replace every href="#" with your real links.
+4. Open index.html and replace every href="#" with your real Spotify, YouTube, Twitter, Discord and Instagram links.
 5. Change the contact email near the bottom of index.html.
 6. Install the "Live Server" extension in VS Code.
 7. Right-click index.html → Open with Live Server.
@@ -25,3 +25,14 @@ FILES
 - assets/background.mp4: add your own video here
 
 The website still opens without background.mp4; it will use the fallback poster/gradient.
+
+
+CONNECTED LINKS
+- Spotify: https://open.spotify.com/artist/3qOjyHpRml1BGPMsdsbRnq
+- Youtube: https://www.youtube.com/channel/UCniFldjrUruHiABSdLc5PbQ
+- Twitter: https://x.com/Eternitygrls
+- Discord: https://discord.gg/TuxwmxqcVx
+- Instagram: https://www.instagram.com/Eternitygrls
+
+
+You can use either assets/background.webm (preferred) or assets/background.mp4.
