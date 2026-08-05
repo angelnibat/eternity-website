@@ -42,3 +42,9 @@ Mobile uses assets/background-mobile.mp4
 
 
 Replace assets/logo.png with your own logo (keep the filename the same).
+
+
+LOGO FIX:
+- Replace the root-level file named logo.png.
+- Keep the exact lowercase filename: logo.png
+- The site also falls back to assets/logo.png if needed.
