@@ -799,3 +799,17 @@ footer {
     padding-bottom: env(safe-area-inset-bottom);
   }
 }
+
+
+.desktop-video{display:block;}
+.mobile-video{display:none;}
+
+@media (max-width:760px){
+  .desktop-video{display:none!important;}
+  .mobile-video{display:block!important;}
+}
+
+@media (min-width:761px){
+  .desktop-video{display:block!important;}
+  .mobile-video{display:none!important;}
+}

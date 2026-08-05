@@ -13,18 +13,29 @@
 </head>
 <body>
   <video
-    class="background-video"
+    class="background-video desktop-video"
     autoplay
     muted
     loop
     playsinline
     preload="metadata"
     poster="assets/poster.png"
-    aria-hidden="true"
-  >
-    <source src="assets/background.mp4" type="video/mp4" />
-    <source src="assets/background.webm" type="video/webm" />
-  </video>
+    aria-hidden="true">
+    <source src="assets/background.webm" type="video/webm">
+    <source src="assets/background.mp4" type="video/mp4">
+</video>
+
+<video
+    class="background-video mobile-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="assets/poster.png"
+    aria-hidden="true">
+    <source src="assets/background-mobile.mp4" type="video/mp4">
+</video>
 
   <div class="background-fallback" aria-hidden="true"></div>
   <div class="background-overlay" aria-hidden="true"></div>
