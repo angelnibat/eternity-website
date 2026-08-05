@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050509" />
+  <title>ETERNITY</title>
+  <meta
+    name="description"
+    content="ETERNITY — music, videos, photos, Discord and more."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video
+    class="background-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="assets/poster.png"
+    aria-hidden="true"
+  >
+    <source src="assets/background.mp4" type="video/mp4" />
+  </video>
+
+  <div class="background-fallback" aria-hidden="true"></div>
+  <div class="background-overlay" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="brand-mini" href="#home" aria-label="Eternity home">
+        <span class="spark">✦</span>
+        <span>ETERNITY</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#music">Music</a>
+        <a href="#videos">Videos</a>
+        <a href="#photos">Photos</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="socials" aria-label="Social media">
+        <a href="#" aria-label="Spotify" data-edit-link>SP</a>
+        <a href="#" aria-label="YouTube" data-edit-link>YT</a>
+        <a href="#" aria-label="Instagram" data-edit-link>IG</a>
+        <a href="#" aria-label="TikTok" data-edit-link>TK</a>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="infinity-mark" aria-hidden="true">∞</div>
+        <h1>ETERNITY</h1>
+        <p class="release-line">OUT OF MY MIND OUT NOW</p>
+
+        <a class="primary-button" href="#" data-edit-link>
+          <span>LISTEN NOW</span>
+          <span class="button-star">✦</span>
+        </a>
+      </div>
+
+      <aside class="section-index" aria-hidden="true">
+        <span class="active">01</span>
+        <span>02</span>
+        <span>03</span>
+        <span>04</span>
+        <span>05</span>
+      </aside>
+    </section>
+
+    <section class="link-grid" aria-label="Eternity links">
+      <a class="link-card" id="music" href="#" data-edit-link>
+        <div>
+          <span class="card-number">01</span>
+          <h2>MUSIC</h2>
+          <p>stream everywhere</p>
+        </div>
+        <div class="card-visual waveform" aria-hidden="true"></div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-card" id="videos" href="#" data-edit-link>
+        <div>
+          <span class="card-number">02</span>
+          <h2>VIDEOS</h2>
+          <p>watch now</p>
+        </div>
+        <div class="card-visual orb" aria-hidden="true"></div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-card" id="photos" href="#" data-edit-link>
+        <div>
+          <span class="card-number">03</span>
+          <h2>PHOTOS</h2>
+          <p>visuals & more</p>
+        </div>
+        <div class="card-visual butterfly" aria-hidden="true">✦</div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-card" href="#" data-edit-link>
+        <div>
+          <span class="card-number">04</span>
+          <h2>DISCORD</h2>
+          <p>join the community</p>
+        </div>
+        <div class="card-visual infinity" aria-hidden="true">∞</div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-card" href="#" data-edit-link>
+        <div>
+          <span class="card-number">05</span>
+          <h2>SHOP</h2>
+          <p>exclusive merch</p>
+        </div>
+        <div class="card-visual bag" aria-hidden="true">✦</div>
+        <span class="arrow">→</span>
+      </a>
+    </section>
+
+    <section class="about-panel" id="about">
+      <span class="eyebrow">ABOUT ETERNITY</span>
+      <p>
+        A creative world for music, visuals and everything that lives between
+        them.
+      </p>
+    </section>
+
+    <section class="player" aria-label="Music player">
+      <img src="assets/poster.png" alt="Out of My Mind cover" />
+      <div class="track-info">
+        <strong>OUT OF MY MIND</strong>
+        <span>ETERNITY</span>
+      </div>
+
+      <button class="icon-button" type="button" aria-label="Previous track">‹</button>
+      <button class="play-button" type="button" aria-label="Play preview">
+        <span class="play-icon">▶</span>
+      </button>
+      <button class="icon-button" type="button" aria-label="Next track">›</button>
+
+      <div class="progress-wrap">
+        <span>0:37</span>
+        <div class="progress"><span></span></div>
+        <span>2:58</span>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <span>© <span id="year"></span> ETERNITY</span>
+      <a href="mailto:hello@example.com">CONTACT</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
