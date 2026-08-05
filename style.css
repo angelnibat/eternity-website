@@ -1081,3 +1081,105 @@ footer {
     margin-right: auto;
   }
 }
+
+/* v10: guaranteed logo and exact card centering */
+.hero-logo {
+  display: block !important;
+  width: clamp(105px, 9vw, 150px) !important;
+  height: auto !important;
+  margin: 0 auto 20px !important;
+  object-fit: contain !important;
+}
+
+.link-grid {
+  justify-content: center !important;
+  justify-items: center !important;
+}
+
+.link-card {
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+}
+
+.link-card > div:first-child {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.card-visual {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  align-self: center !important;
+  justify-self: center !important;
+  margin: 24px auto 18px !important;
+}
+
+.platform-logo,
+.platform-logo svg {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.arrow {
+  align-self: center !important;
+  margin: auto auto 0 !important;
+}
+
+@media (min-width: 761px) {
+  .link-grid {
+    grid-template-columns: repeat(5, minmax(190px, 1fr)) !important;
+    width: min(100%, 1220px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .link-card {
+    width: 100% !important;
+    min-height: 265px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-logo {
+    width: 105px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero-content,
+  .hero-title,
+  .release-line {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .link-card {
+    display: grid !important;
+    grid-template-columns: 1fr 64px !important;
+    align-items: center !important;
+    justify-items: stretch !important;
+    text-align: left !important;
+  }
+
+  .link-card > div:first-child {
+    text-align: left !important;
+  }
+
+  .card-visual {
+    position: static !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    justify-self: center !important;
+    align-self: center !important;
+    margin: 0 !important;
+  }
+
+  .arrow {
+    display: none !important;
+  }
+}
