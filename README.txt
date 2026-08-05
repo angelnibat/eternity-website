@@ -39,3 +39,6 @@ You can use either assets/background.webm (preferred) or assets/background.mp4.
 
 Desktop uses assets/background.webm
 Mobile uses assets/background-mobile.mp4
+
+
+Replace assets/logo.png with your own logo (keep the filename the same).
