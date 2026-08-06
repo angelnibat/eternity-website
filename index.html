@@ -21,7 +21,7 @@
     preload="metadata"
     poster="assets/poster.png"
     aria-hidden="true">
-    <source src="assets/background.webm" type="video/webm">
+    <source src="assets/background.webm" type="video/webm" data-video-source="desktopVideoUrl">
     <source src="assets/background.mp4" type="video/mp4">
 </video>
 
@@ -34,7 +34,7 @@
     preload="metadata"
     poster="assets/poster.png"
     aria-hidden="true">
-    <source src="assets/background-mobile.mp4" type="video/mp4">
+    <source src="assets/background-mobile.mp4" type="video/mp4" data-video-source="mobileVideoUrl">
 </video>
 
   <div class="background-fallback" aria-hidden="true"></div>
@@ -57,27 +57,27 @@
 
       
       <div class="socials" aria-label="Social media">
-        <a href="https://open.spotify.com/artist/3qOjyHpRml1BGPMsdsbRnq" aria-label="Spotify" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true">
+        <a href="#" aria-label="Spotify" data-link="spotifyUrl" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true">
   <circle cx="12" cy="12" r="10" fill="currentColor"/>
   <path d="M6.6 9.1c3.6-1.1 7.9-.8 11 .9" fill="none" stroke="#050509" stroke-width="1.55" stroke-linecap="round"/>
   <path d="M7.2 12.1c3-.8 6.6-.5 9.3.8" fill="none" stroke="#050509" stroke-width="1.45" stroke-linecap="round"/>
   <path d="M7.8 14.9c2.5-.6 5.3-.4 7.6.7" fill="none" stroke="#050509" stroke-width="1.35" stroke-linecap="round"/>
 </svg></a>
-        <a href="https://www.youtube.com/channel/UCniFldjrUruHiABSdLc5PbQ" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></a>
-        <a href="https://x.com/Eternitygrls" aria-label="X" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22H17l-4.9-6.4L6.5 22H3.4l7.2-8.2L.9 2h6.3l4.4 5.8L18.9 2Zm-1.1 17.9h1.7L6.3 4H4.5l13.3 15.9Z"/></svg></a>
-        <a href="https://discord.gg/TuxwmxqcVx" aria-label="Discord" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A16.5 16.5 0 0 0 16.2 3l-.5 1a15.2 15.2 0 0 0-7.4 0l-.5-1a16.5 16.5 0 0 0-4.1 1.4C1.1 8.3.4 12.1.8 15.8a16.8 16.8 0 0 0 5 2.5l1.2-1.7c-.7-.3-1.4-.7-2-1.2l.5-.4c3.8 1.8 8.1 1.8 12 0l.5.4c-.7.5-1.3.9-2 1.2l1.2 1.7a16.8 16.8 0 0 0 5-2.5c.5-4.3-.8-8-1.9-11.4ZM8.3 14.2c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4Zm7.4 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4Z"/></svg></a>
-        <a href="https://www.instagram.com/Eternitygrls" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.7 2h8.6A5.7 5.7 0 0 1 22 7.7v8.6a5.7 5.7 0 0 1-5.7 5.7H7.7A5.7 5.7 0 0 1 2 16.3V7.7A5.7 5.7 0 0 1 7.7 2Zm-.2 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm9.8 1.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>
+        <a href="#" aria-label="YouTube" data-link="youtubeUrl" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></a>
+        <a href="#" aria-label="X" data-link="twitterUrl" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22H17l-4.9-6.4L6.5 22H3.4l7.2-8.2L.9 2h6.3l4.4 5.8L18.9 2Zm-1.1 17.9h1.7L6.3 4H4.5l13.3 15.9Z"/></svg></a>
+        <a href="#" aria-label="Discord" data-link="discordUrl" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A16.5 16.5 0 0 0 16.2 3l-.5 1a15.2 15.2 0 0 0-7.4 0l-.5-1a16.5 16.5 0 0 0-4.1 1.4C1.1 8.3.4 12.1.8 15.8a16.8 16.8 0 0 0 5 2.5l1.2-1.7c-.7-.3-1.4-.7-2-1.2l.5-.4c3.8 1.8 8.1 1.8 12 0l.5.4c-.7.5-1.3.9-2 1.2l1.2 1.7a16.8 16.8 0 0 0 5-2.5c.5-4.3-.8-8-1.9-11.4ZM8.3 14.2c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4Zm7.4 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4Z"/></svg></a>
+        <a href="#" aria-label="Instagram" data-link="instagramUrl" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.7 2h8.6A5.7 5.7 0 0 1 22 7.7v8.6a5.7 5.7 0 0 1-5.7 5.7H7.7A5.7 5.7 0 0 1 2 16.3V7.7A5.7 5.7 0 0 1 7.7 2Zm-.2 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm9.8 1.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>
       </div>
     </header>
 
     <section class="hero" id="home">
       <div class="hero-content">
-        <img class="hero-logo" src="./logo.png?v=13" onerror="this.onerror=null;this.src='./assets/logo.png?v=13';" alt="Eternity logo">
-        <h1 class="hero-title">ETERNITY</h1>
-        <p class="release-line">OUT OF MY MIND OUT NOW</p>
+        <img class="hero-logo" src="./logo.png" alt="Eternity logo" data-image="logoUrl">
+        <h1 class="hero-title" data-config="title">ETERNITY</h1>
+        <p class="release-line" data-config="subtitle">OUT OF MY MIND OUT NOW</p>
 
-        <a class="primary-button" href="https://share.amuse.io/track/eternity-out-of-my-mind" data-edit-link target="_blank" rel="noopener noreferrer">
-          <span>LISTEN NOW</span>
+        <a class="primary-button" href="https://share.amuse.io/track/eternity-out-of-my-mind" data-edit-link target="_blank" rel="noopener noreferrer" data-link="listenNowUrl">
+          <span data-config="listenNowText">LISTEN NOW</span>
           <span class="button-star">✦</span>
         </a>
       </div>
@@ -92,7 +92,7 @@
     </section>
 
     <section class="link-grid" aria-label="Eternity links">
-      <a class="link-card" id="spotify" href="https://open.spotify.com/artist/3qOjyHpRml1BGPMsdsbRnq" data-edit-link target="_blank" rel="noopener noreferrer">
+      <a class="link-card" id="spotify" href="#" data-edit-link target="_blank" rel="noopener noreferrer" data-link="spotifyUrl">
         <div>
           <span class="card-number">01</span>
           <h2>SPOTIFY</h2>
@@ -107,7 +107,7 @@
         <span class="arrow">→</span>
       </a>
 
-      <a class="link-card" id="youtube" href="https://www.youtube.com/channel/UCniFldjrUruHiABSdLc5PbQ" data-edit-link target="_blank" rel="noopener noreferrer">
+      <a class="link-card" id="youtube" href="https://www.youtube.com/channel/UCniFldjrUruHiABSdLc5PbQ" data-edit-link target="_blank" rel="noopener noreferrer" data-link="youtubeUrl">
         <div>
           <span class="card-number">02</span>
           <h2>YOUTUBE</h2>
@@ -117,7 +117,7 @@
         <span class="arrow">→</span>
       </a>
 
-      <a class="link-card" id="twitter" href="https://x.com/Eternitygrls" data-edit-link target="_blank" rel="noopener noreferrer">
+      <a class="link-card" id="twitter" href="https://x.com/Eternitygrls" data-edit-link target="_blank" rel="noopener noreferrer" data-link="twitterUrl">
         <div>
           <span class="card-number">03</span>
           <h2>TWITTER</h2>
@@ -127,7 +127,7 @@
         <span class="arrow">→</span>
       </a>
 
-      <a class="link-card" href="https://discord.gg/TuxwmxqcVx" data-edit-link target="_blank" rel="noopener noreferrer">
+      <a class="link-card" href="https://discord.gg/TuxwmxqcVx" data-edit-link target="_blank" rel="noopener noreferrer" data-link="discordUrl">
         <div>
           <span class="card-number">04</span>
           <h2>DISCORD</h2>
@@ -137,7 +137,7 @@
         <span class="arrow">→</span>
       </a>
 
-      <a class="link-card" href="https://www.instagram.com/Eternitygrls" data-edit-link target="_blank" rel="noopener noreferrer">
+      <a class="link-card" href="https://www.instagram.com/Eternitygrls" data-edit-link target="_blank" rel="noopener noreferrer" data-link="instagramUrl">
         <div>
           <span class="card-number">05</span>
           <h2>INSTAGRAM</h2>
@@ -149,21 +149,38 @@
     </section>
 
     
-    <section class="about-panel" id="about">
+    
+    <section class="latest-video" id="latest-video">
+      <div class="section-heading">
+        <span class="eyebrow" data-config="videoEyebrow">NOW PLAYING</span>
+        <h2 data-config="videoTitle">CHECK OUT OUR LATEST VIDEO</h2>
+      </div>
+      <div class="video-frame">
+        <iframe
+          id="latest-video-frame"
+          src="https://www.youtube-nocookie.com/embed/FrB7TeNOl9g"
+          title="Eternity latest YouTube video"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+<section class="about-panel" id="about">
   <div class="about-header">
-    <span class="eyebrow">ABOUT US</span>
-    <h2>More than a girl group.</h2>
+    <span class="eyebrow" data-config="aboutEyebrow" data-config="aboutEyebrow">ABOUT US</span>
+    <h2 data-config="aboutHeading">More than a girl group.</h2>
   </div>
 
+  
   <div class="about-content">
-    <p>Built from late nights, setbacks, and unwavering faith, <strong>Eternity</strong> is proof that dreams don't have an expiration date. With no major company, no shortcuts, and no one to pave the way, these girls fought through every hardship together—turning rejection into motivation and struggles into strength.</p>
-
-    <p>Every performance, every practice, and every sacrifice led to this moment. Their debut isn't just the beginning of a girl group—it's the start of a legacy built on resilience, sisterhood, and passion.</p>
-
-    <blockquote>“They didn't wait for someone else to believe in them. They believed in themselves.”</blockquote>
-
-    <p class="closing">This is Eternity. And this is only the beginning. ✨</p>
+    <p data-config="aboutParagraph1">Built from late nights, setbacks, and unwavering faith, Eternity is proof that dreams don't have an expiration date. With no major company, no shortcuts, and no one to pave the way, these girls fought through every hardship together—turning rejection into motivation and struggles into strength.</p>
+    <p data-config="aboutParagraph2">Every performance, every practice, and every sacrifice led to this moment. Their debut isn't just the beginning of a girl group—it's the start of a legacy built on resilience, sisterhood, and passion.</p>
+    <blockquote data-config="aboutQuote">“They didn't wait for someone else to believe in them. They believed in themselves.”</blockquote>
+    <p class="closing" data-config="aboutClosing">This is Eternity. And this is only the beginning. ✨</p>
   </div>
+
 </section>
 
     <footer><span>© <span id="year"></span> ETERNITY</span></footer>

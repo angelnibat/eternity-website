@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07070d">
+  <title>ETERNITY Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-header">
+      <div>
+        <span class="kicker">ETERNITY</span>
+        <h1>Website Dashboard</h1>
+        <p>Edit the live site without touching the HTML.</p>
+      </div>
+      <a href="/" target="_blank" rel="noopener">View website ↗</a>
+    </header>
+
+    <section class="login-card" id="login-card">
+      <h2>Unlock dashboard</h2>
+      <p>Enter the admin password you set in Cloudflare.</p>
+      <div class="login-row">
+        <input id="admin-token" type="password" autocomplete="current-password" placeholder="Admin password">
+        <button id="unlock-button" type="button">Unlock</button>
+      </div>
+      <p class="status" id="login-status"></p>
+    </section>
+
+    <form id="editor" hidden>
+      <section class="panel">
+        <div class="panel-title">
+          <span>01</span>
+          <h2>Main hero</h2>
+        </div>
+        <div class="fields two">
+          <label>Title<input name="title"></label>
+          <label>Subtitle<input name="subtitle"></label>
+          <label>Button text<input name="listenNowText"></label>
+          <label>Listen Now URL<input name="listenNowUrl" type="url"></label>
+          <label>Logo URL<input name="logoUrl"></label>
+          <label>Desktop video URL<input name="desktopVideoUrl"></label>
+          <label>Mobile video URL<input name="mobileVideoUrl"></label>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">
+          <span>02</span>
+          <h2>Social links</h2>
+        </div>
+        <div class="fields two">
+          <label>Spotify<input name="spotifyUrl" type="url"></label>
+          <label>YouTube<input name="youtubeUrl" type="url"></label>
+          <label>Twitter / X<input name="twitterUrl" type="url"></label>
+          <label>Discord<input name="discordUrl" type="url"></label>
+          <label>Instagram<input name="instagramUrl" type="url"></label>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">
+          <span>03</span>
+          <h2>Latest video</h2>
+        </div>
+        <label class="toggle"><input name="videoVisible" type="checkbox"><span>Show this section</span></label>
+        <div class="fields two">
+          <label>Small heading<input name="videoEyebrow"></label>
+          <label>Section title<input name="videoTitle"></label>
+          <label class="wide">YouTube URL<input name="youtubeVideoUrl" type="url"></label>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">
+          <span>04</span>
+          <h2>About Us</h2>
+        </div>
+        <label class="toggle"><input name="aboutVisible" type="checkbox"><span>Show this section</span></label>
+        <div class="fields">
+          <label>Small heading<input name="aboutEyebrow"></label>
+          <label>Main heading<input name="aboutHeading"></label>
+          <label>First paragraph<textarea name="aboutParagraph1" rows="6"></textarea></label>
+          <label>Second paragraph<textarea name="aboutParagraph2" rows="5"></textarea></label>
+          <label>Quote<textarea name="aboutQuote" rows="3"></textarea></label>
+          <label>Closing line<textarea name="aboutClosing" rows="2"></textarea></label>
+        </div>
+      </section>
+
+      <div class="save-bar">
+        <p class="status" id="save-status">Changes are saved directly to the live website.</p>
+        <button type="submit">Save changes</button>
+      </div>
+    </form>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

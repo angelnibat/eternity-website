@@ -1,0 +1,53 @@
+ETERNITY DASHBOARD SETUP
+
+The dashboard is available at:
+https://YOUR-PAGES-URL.pages.dev/admin/
+
+The live website works immediately using site-config.json.
+To make the Save button work, set up Cloudflare KV and an admin secret:
+
+1. Push this entire project to GitHub, including:
+   - admin/
+   - functions/
+   - _routes.json
+   - site-config.json
+
+2. Open Cloudflare Dashboard:
+   Workers & Pages → your ETERNITY Pages project → Settings → Bindings.
+
+3. Create a KV namespace:
+   Storage & databases → KV → Create namespace.
+   Name it something like: eternity-site-config
+
+4. Return to your Pages project → Settings → Bindings.
+   Add a KV namespace binding:
+   Variable name: SITE_CONFIG
+   KV namespace: eternity-site-config
+
+5. In your Pages project settings, add a secret/environment variable:
+   Variable name: ADMIN_TOKEN
+   Value: choose a strong private password.
+   Apply it to Production. Add it to Preview too if you use preview deployments.
+
+6. Redeploy the latest GitHub commit.
+
+7. Visit /admin/, enter the exact ADMIN_TOKEN password, edit the site, and press Save.
+
+WHAT THE DASHBOARD CAN EDIT
+- Main title and subtitle
+- Listen Now text and URL
+- Logo URL
+- Desktop/mobile background-video paths or URLs
+- Spotify, YouTube, X, Discord, and Instagram links
+- Latest YouTube video and section text
+- About Us text
+- Show/hide Latest Video
+- Show/hide About Us
+
+MEDIA UPLOADS
+This version changes media URLs/paths but does not upload large video files.
+Continue replacing logo.png and videos through GitHub, or later connect Cloudflare R2 for direct uploads.
+
+SECURITY
+Never put your ADMIN_TOKEN inside index.html, admin.js, site-config.json, or GitHub.
+Set it only inside Cloudflare project settings.
