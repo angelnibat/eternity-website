@@ -90,3 +90,32 @@ document.addEventListener("DOMContentLoaded", async () => {
   const config = await loadConfig();
   applyConfig(config);
 });
+
+
+function setupSectionReveals() {
+  const sections = document.querySelectorAll(".reveal-section");
+  if (!sections.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    sections.forEach((section) => section.classList.add("is-visible"));
+    return;
+  }
+
+  document.documentElement.classList.add("js-reveal-ready");
+
+  const observer = new IntersectionObserver(
+    (entries, revealObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -40px 0px"
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}
+
+window.addEventListener("load", setupSectionReveals);

@@ -1,0 +1,9 @@
+ETERNITY WEBSITE V15
+
+Changes:
+- Removed the floating 01–05 numbers and vertical side indicator.
+- Kept the existing layout, videos, dashboard, Latest Video, and About Us.
+- Added subtle section fade-ins on scroll.
+- Added a light glow to social cards on desktop hover.
+- Added a soft glass blur to the existing top navigation.
+- Added a small tap response on mobile cards.
